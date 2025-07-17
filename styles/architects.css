@@ -26,12 +26,28 @@
 .bg-light{
   background-color: rgba(255, 144, 14, 0.1);
 }
+
+.btn-primary{
+background-color: #FF900E;
+color: white;
+padding: 20px 25px;
+font-size: 1.24rem;
+font-weight: 600;
+border-radius: 10px;
+border: none;
+}
   /* header styles */
 
   /* navbar related styles */
 
   .navbar{
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand{
+    font-weight: 700;
+    font-size: 3rem;
   }
 
   .nav-item{
@@ -47,4 +63,27 @@
   .navbar, .banner{
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .banner-content{
+    margin: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .banner-title{
+    font-weight: 700;
+    font-size: 4em;
+  }
+
+  .banner-image{
+    width: 100%;
+  }
+
+  /* responsive media query */
+
+  @media screen and (max-width: 576px) {
+    .navbar, .nav-link{
+      flex-direction: column;
+    }
   }
